@@ -5,7 +5,6 @@ EAPI=8
 
 DESCRIPTION="Nerd Fonts: patched developer fonts with extra glyphs/icons"
 HOMEPAGE="https://www.nerdfonts.com"
-SRC_URI=""
 
 LICENSE="MIT"
 SLOT="0"
@@ -26,104 +25,76 @@ IUSE="
 	victormono zedmono
 "
 
+SRC_URI="
+	0xproto? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/0xProto.zip )
+	3270? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/3270.zip )
+	adwaitamono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/AdwaitaMono.zip )
+	agave? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Agave.zip )
+	anonymouspro? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/AnonymousPro.zip )
+	arimo? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Arimo.zip )
+	atkinsonhyperlegiblemono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/AtkinsonHyperlegibleMono.zip )
+	aurulentsansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/AurulentSansMono.zip )
+	bigblueterminal? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/BigBlueTerminal.zip )
+	bitstreamverasansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/BitstreamVeraSansMono.zip )
+	cascadiacode? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/CascadiaCode.zip )
+	cascadiamono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/CascadiaMono.zip )
+	codenewroman? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/CodeNewRoman.zip )
+	comicshannsmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/ComicShannsMono.zip )
+	commitmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/CommitMono.zip )
+	cousine? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Cousine.zip )
+	d2coding? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/D2Coding.zip )
+	daddytimemono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/DaddyTimeMono.zip )
+	dejavusansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/DejaVuSansMono.zip )
+	departuremono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/DepartureMono.zip )
+	droidsansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/DroidSansMono.zip )
+	envycoder? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/EnvyCodeR.zip )
+	fantasquesansmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/FantasqueSansMono.zip )
+	firacode? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/FiraCode.zip )
+	firamono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/FiraMono.zip )
+	geistmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/GeistMono.zip )
+	hack? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Hack.zip )
+	hasklig? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Hasklig.zip )
+	hermit? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Hermit.zip )
+	ibmplexmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/IBMplexMono.zip )
+	inconsolata? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Inconsolata.zip )
+	iosevka? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Iosevka.zip )
+	iosevkaterm? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/IosevkaTerm.zip )
+	iosevkatermslab? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/IosevkaTermSlab.zip )
+	jetbrainsmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/JetBrainsMono.zip )
+	lekton? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Lekton.zip )
+	liberationmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/LiberationMono.zip )
+	lilex? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Lilex.zip )
+	martianmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/MartianMono.zip )
+	meslo? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Meslo.zip )
+	monofur? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/MonoFur.zip )
+	monoid? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Monoid.zip )
+	mononoki? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Mononoki.zip )
+	nerdfontssymbolsonly? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/NerdFontsSymbolsOnly.zip )
+	noto? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Noto.zip )
+	opendyslexic? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/OpenDyslexic.zip )
+	profont? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/ProFont.zip )
+	proggyclean? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/ProggyClean.zip )
+	robotomono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/RobotoMono.zip )
+	sharetechmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/ShareTechMono.zip )
+	sourcecodepro? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/SourceCodePro.zip )
+	spacemono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/SpaceMono.zip )
+	terminus? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Terminus.zip )
+	ubuntu? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/Ubuntu.zip )
+	ubuntumono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/UbuntuMono.zip )
+	ubuntusans? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/UbuntuSans.zip )
+	victormono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/VictorMono.zip )
+	zedmono? ( https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/ZedMono.zip )
+"
+
 BDEPEND="app-arch/unzip"
-DEPEND=""
-RDEPEND=""
 
 FONTDIR="/usr/share/fonts/nerdfonts"
 
-# Accumulate download URLs for selected fonts
-_add_font() {
-	local useflag="$1"
-	local fontdir="$2"
-	local filename="$3"
-	if use ${useflag}; then
-		SRC_URI+=" https://github.com/ryanoasis/nerd-fonts/releases/download/v${PV}/${filename}"
-		FONTS+=("${fontdir}")
-	fi
-}
-
 src_unpack() {
-	FONTS=()
-
-	_add_font 0xproto "0xProto" "0xProto.zip"
-	_add_font 3270 "3270" "3270.zip"
-	_add_font adwaitamono "AdwaitaMono" "AdwaitaMono.zip"
-	_add_font agave "Agave" "Agave.zip"
-	_add_font anonymouspro "AnonymousPro" "AnonymousPro.zip"
-	_add_font arimo "Arimo" "Arimo.zip"
-	_add_font atkinsonhyperlegiblemono "AtkinsonHyperlegibleMono" "AtkinsonHyperlegibleMono.zip"
-	_add_font aurulentsansmono "AurulentSansMono" "AurulentSansMono.zip"
-	_add_font bigblueterminal "BigBlueTerminal" "BigBlueTerminal.zip"
-	_add_font bitstreamverasansmono "BitstreamVeraSansMono" "BitstreamVeraSansMono.zip"
-	_add_font cascadiacode "CascadiaCode" "CascadiaCode.zip"
-	_add_font cascadiamono "CascadiaMono" "CascadiaMono.zip"
-	_add_font codenewroman "CodeNewRoman" "CodeNewRoman.zip"
-	_add_font comicshannsmono "ComicShannsMono" "ComicShannsMono.zip"
-	_add_font commitmono "CommitMono" "CommitMono.zip"
-	_add_font cousine "Cousine" "Cousine.zip"
-	_add_font d2coding "D2Coding" "D2Coding.zip"
-	_add_font daddytimemono "DaddyTimeMono" "DaddyTimeMono.zip"
-	_add_font dejavusansmono "DejaVuSansMono" "DejaVuSansMono.zip"
-	_add_font departuremono "DepartureMono" "DepartureMono.zip"
-	_add_font droidsansmono "DroidSansMono" "DroidSansMono.zip"
-	_add_font envycoder "EnvyCodeR" "EnvyCodeR.zip"
-	_add_font fantasquesansmono "FantasqueSansMono" "FantasqueSansMono.zip"
-	_add_font firacode "FiraCode" "FiraCode.zip"
-	_add_font firamono "FiraMono" "FiraMono.zip"
-	_add_font geistmono "GeistMono" "GeistMono.zip"
-	_add_font gomono "GoMono" "GoMono.zip"
-	_add_font gohu "GohuFont" "GohuFont.zip"
-	_add_font hack "Hack" "Hack.zip"
-	_add_font hasklig "Hasklig" "Hasklig.zip"
-	_add_font heavydata "HeavyData" "HeavyData.zip"
-	_add_font hermit "Hermit" "Hermit.zip"
-	_add_font iawriter "iAWriter" "iAWriter.zip"
-	_add_font ibmplexmono "IBMplexMono" "IBMplexMono.zip"
-	_add_font inconsolata "Inconsolata" "Inconsolata.zip"
-	_add_font inconsolatago "InconsolataGo" "InconsolataGo.zip"
-	_add_font inconsolatalgc "InconsolataLGC" "InconsolataLGC.zip"
-	_add_font intelonemono "IntelOneMono" "IntelOneMono.zip"
-	_add_font iosevka "Iosevka" "Iosevka.zip"
-	_add_font iosevkaterm "IosevkaTerm" "IosevkaTerm.zip"
-	_add_font iosevkatermslab "IosevkaTermSlab" "IosevkaTermSlab.zip"
-	_add_font jetbrainsmono "JetBrainsMono" "JetBrainsMono.zip"
-	_add_font lekton "Lekton" "Lekton.zip"
-	_add_font liberationmono "LiberationMono" "LiberationMono.zip"
-	_add_font lilex "Lilex" "Lilex.zip"
-	_add_font martianmono "MartianMono" "MartianMono.zip"
-	_add_font meslo "Meslo" "Meslo.zip"
-	_add_font monaspace "MonoSpace" "MonoSpace.zip"
-	_add_font monofur "MonoFur" "MonoFur.zip"
-	_add_font monoid "Monoid" "Monoid.zip"
-	_add_font mononoki "Mononoki" "Mononoki.zip"
-	_add_font mplus "MPlus" "MPlus.zip"
-	_add_font nerdfontssymbolsonly "NerdFontsSymbolsOnly" "NerdFontsSymbolsOnly.zip"
-	_add_font noto "Noto" "Noto.zip"
-	_add_font opendyslexic "OpenDyslexic" "OpenDyslexic.zip"
-	_add_font overpass "Overpass" "Overpass.zip"
-	_add_font profont "ProFont" "ProFont.zip"
-	_add_font proggyclean "ProggyClean" "ProggyClean.zip"
-	_add_font recursive "RecursiveMono" "RecursiveMono.zip"
-	_add_font robotomono "RobotoMono" "RobotoMono.zip"
-	_add_font sharetechmono "ShareTechMono" "ShareTechMono.zip"
-	_add_font sourcecodepro "SourceCodePro" "SourceCodePro.zip"
-	_add_font spacemono "SpaceMono" "SpaceMono.zip"
-	_add_font terminus "Terminus" "Terminus.zip"
-	_add_font tinos "Tinos" "Tinos.zip"
-	_add_font ubuntu "Ubuntu" "Ubuntu.zip"
-	_add_font ubuntumono "UbuntuMono" "UbuntuMono.zip"
-	_add_font ubuntusans "UbuntuSans" "UbuntuSans.zip"
-	_add_font victormono "VictorMono" "VictorMono.zip"
-	_add_font zedmono "ZedMono" "ZedMono.zip"
-
 	default
 }
 
 src_install() {
 	insinto "${FONTDIR}"
-
-	for font in "${FONTS[@]}"; do
-		doins -r "${WORKDIR}/${font}"/*.ttf || die
-	done
+	find "${WORKDIR}" -type f -name '*.ttf' -exec doins {} + || die
 }
