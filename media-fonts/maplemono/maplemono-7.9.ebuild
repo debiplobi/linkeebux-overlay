@@ -1,6 +1,4 @@
-# Copyright 2026 Debiprasad Das
 # Distributed under the terms of the SIL Open Font License 1.1
-
 
 EAPI=8
 inherit font
